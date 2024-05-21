@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(images/hearts.jpg);
+    background-size: cover;
+}
+
+#content-box {
+    background: white;
+    width: 25rem;
+    height: 500px;
+    margin: calc(50vh - 250px) auto;
+    padding: 1rem;
+    border: 2px solid;
+    box-shadow: 6px 6px;
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+}
+
+#calculate {
+    width: 50%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    box-shadow: 5px 5px #000;
+}
+#calculate:hover {
+    background: lightcoral;
+    box-shadow: none;
+}
+#calculate:active {
+    background: rgb(255, 36, 80);
+    box-shadow: none;
+}
+
+label {
+    font-weight: bold;
+}
+input {
+    border: 2px solid;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva , Verdana, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#result-percentage {
+    line-height: 1;
+    margin: 0;
+    font-size: 50px;
+}
+.row {
+    text-align-last: left;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
