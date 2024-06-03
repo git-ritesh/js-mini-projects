@@ -33,7 +33,7 @@ body, .input-container, .input-field-wrapper, .intro-content, .more-content {
 
 body {
     background: var(--clr-bg);
-    min-height: 100vh;
+    min-height: 100dvh;
     min-width: 320px;
 }
 
