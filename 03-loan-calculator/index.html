@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <!-- Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400..700&family=League+Spartan&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flexbox">
+    <header class="flexbox">
+        <h1><span class="red-txt">Loan</span> Calculator</h1>
+    </header>
+    <main class="flexbox">
+        <div class="input-container flexbox">
+            <div class="input-field-wrapper flexbox">
+                <div class="input-field flexbox">
+                    <div class="symbol-box flexbox flexbox">₹</div>
+                    <input placeholder="Loan Amount" type="number" name="loan-amount" id="loan-amount">
+                </div>
+                <div class="input-field flexbox">
+                    <div class="symbol-box flexbox">%</div>
+                    <input placeholder="Rate of Interest p.a." type="number" name="" id="interest-rate">
+                </div>
+                <div class="input-field flexbox">
+                    <div class="symbol-box flexbox"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path d="M13 1.85717L13 12.5714L20.7143 20.2857M25 13C25 19.6274 19.6274 25 13 25C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13Z" stroke="#F1F5F8" stroke-width="2" stroke-linecap="round"/>
+                      </svg></div>
+                    <input placeholder="Tenure (Yrs.)" type="number" name="" id="tenure">
+                </div>
+            </div>
+            <!-- CALL TO ACTIONS -->
+            <div class="buttons-container flexbox">
+                <button id="btn-calculate" type="submit">Calculate</button>
+                <button id="btn-reset" type="reset">Reset</button>
+            </div>
+        </div>
+        <!-- OUTPUT CONTAINER -->
+        <div class="output-container">
+            <div class="intro-content flexbox">
+                <p class="output__para">Your estimated monthly payment</p>
+                <h2 id="installment-amount" class="output__amount flexbox">0.00</h2>
+            </div>
+            <hr>
+            <div class="more-content flexbox">
+                <div class="row flexbox">
+                    <p class="output__para">Principal</p>
+                    <h3 id="principal" class="output__amount flexbox">0</h3>
+                </div>
+                <div class="row flexbox">
+                    <p class="output__para">Total Interest</p>
+                    <h3 id="total-interest" class="output__amount flexbox">0</h3>
+                </div>
+                <div class="row flexbox">
+                    <p class="output__para">Total Amount</p>
+                    <h3 id="total-amount" class="output__amount flexbox">0</h3>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

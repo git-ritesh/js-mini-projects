@@ -1,0 +1,187 @@
+:root {
+    /* ======= COLORS ======== */
+    --clr-bg: #172126;
+    --clr-red: #EE5253;
+    --clr-light-gray: #8B9EA9;
+    --clr-white: #F1F5F8;
+}
+
+* , *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* APPLIES TO A GROUP OF ELEMENTS */
+.flexbox {
+    display: flex;
+}
+
+body, main, .symbol-box {
+    justify-content: center;
+}
+
+.buttons-container, .row {
+    justify-content: space-between;
+}
+
+body, .input-container, .input-field-wrapper, .intro-content, .more-content {
+    flex-direction: column;
+}
+
+.symbol-box, .output__amount, .intro-content {
+    align-items: center;
+}
+
+body {
+    background: var(--clr-bg);
+    min-height: 100vh;
+    min-width: 320px;
+}
+
+header, main {
+    width: 92.5%;
+    margin: 0 auto;
+}
+
+header, .input-container {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header > h1 {
+    color: var(--clr-white);
+    text-transform: uppercase;
+    font-size: clamp(1.875rem, 5vw, 4rem);
+    line-height: 100%;
+    margin: .75rem auto;
+}
+.red-txt {
+    color: var(--clr-red);
+}
+
+/* ============= MAIN STYLES ============= */
+
+main {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.input-container, .output-container {
+    width: 18.5rem;
+}
+
+/* LEFT SECTION - INPUT CONTAINER --> CONTAINS INPUT FIELDS & CTA */
+.input-container {
+    gap: 4vh;
+}
+
+.input-field-wrapper {
+    gap: 2vh;
+}
+
+.input-field {
+    height: 38px;
+}
+
+input {
+    border: 1px solid var(--clr-light-gray);
+    border-left: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--clr-white);
+    max-width: calc(100% - 2.375rem);
+    padding-left: 1rem;
+}
+input:focus {
+    outline: none;
+    background: var(--clr-white);
+    color: var(--clr-bg);
+}
+.symbol-box {
+    color: var(--clr-white);
+    background: var(--clr-light-gray);
+    flex-shrink: 0;
+    width: 38px;
+    font-size: 30px;
+}
+
+.buttons-container {
+    margin-top: .875rem;
+}
+
+button {
+    font-size: 24px;
+    line-height: 100%;
+    padding: 8px 20px;
+    transition: .3s all ease-in-out;
+}
+#btn-calculate {
+    background: var(--clr-red);
+    border: none;
+    color: var(--clr-white);
+}
+#btn-reset {
+    background: transparent;
+    border: 2px solid var(--clr-red);
+    color: var(--clr-red);
+}
+button:active {
+    opacity: .8;
+    scale: .9;
+}
+
+/* OUTPUT CONTAINER --> contains results */
+.output-container {
+    color: var(--clr-white);
+    outline: 1px solid var(--clr-light-gray);
+    padding: .5rem;
+}
+body, h2, h3, .output__para {
+    margin: 0;
+}
+
+.output__para {
+    font-family: "League Spartan",serif;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: var(light);
+}
+.output__amount {
+    font-family: "Anton",serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+.output__amount::before {
+    content: "₹";
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    align-self: flex-start;
+}
+
+#installment-amount {
+    font-size: 2rem;
+}
+
+hr {
+    width: 69%;
+    border-color: var(--clr-light-gray);
+    margin-block: 0;
+}
+
+.intro-content {
+    row-gap: .75rem;
+    margin-bottom: 1rem;
+}
+
+.more-content {
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.row {
+    align-items: last baseline;
+}
