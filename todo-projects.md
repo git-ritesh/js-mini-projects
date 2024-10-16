@@ -4,7 +4,7 @@
 
 - [x] BMI Calculator
 
-- [x]Loan Calculator
+- [x] Loan Calculator
 
 - [x] Counter Application
 
