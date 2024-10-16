@@ -1,21 +1,21 @@
 # Projects List :
 
-[ x ] Love Calculator
+- [x] Love Calculator
 
-**Day 2:** BMI Calculator
+- [x] BMI Calculator
 
-**Day 3:** Loan Calculator
+- [x]Loan Calculator
 
-**Day 4:** Counter Application
+- [x] Counter Application
 
-**Day 5:** Palindrome Checker Application
+- [ ] Palindrome Checker Application
 
-**Day 6:** RGB Color Generator
+- [ ] RGB Color Generator
 
-**Day 7:** Tip Calculator
+- [ ] Tip Calculator
 
-**Day 8:** Time and Date Widget
+- [ ] Time and Date Widget
 
-**Day 9:** Get Unicode Character Value
+- [ ] Get Unicode Character Value
 
-**Day 10:** Age Calculator Application
+- [ ] Age Calculator Application
