@@ -1,6 +1,6 @@
 # Projects List :
 
-[x] Love Calculator
+[ x ] Love Calculator
 
 **Day 2:** BMI Calculator
 
