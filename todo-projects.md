@@ -1,6 +1,6 @@
 # Projects List :
 
-**Day 1:** [Love Calculator](https://git-ritesh.github.io/js-mini-projects/04-counter-app/index.html)
+- [x] Love Calculator
 
 **Day 2:** BMI Calculator
 
